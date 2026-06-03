@@ -1,345 +1,434 @@
-import CasesGrid from "./components/CasesGrid";
+import Sidebar from "./components/Sidebar";
+import OtherCases from "./components/OtherCases";
 
-const fd = "var(--font-display), sans-serif";
-const fb = "var(--font-body), sans-serif";
-
-const STATS = [
-  { num: "15+", lbl: "Founders respaldados" },
-  { num: "$1M+", lbl: "En profit generado" },
-  { num: "3.2x", lbl: "ROAS lift promedio" },
-  { num: "4 años", lbl: "Corriendo cuentas Meta rentables" },
-];
+const CALENDLY = "https://calendly.com/admin-agencyastra/30-min-profit-strategy-call";
 
 export default function Home() {
   return (
-    <div style={{ fontFamily: fb }}>
-
+    <>
       {/* ── NAV ── */}
-      <nav className="m-nav" style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "1.25rem 4rem",
-        borderBottom: "0.5px solid var(--g200)",
-        background: "var(--white)",
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-      }}>
-        <a href="https://agencyastra.com" style={{ display: "block" }}>
-          <img
-            src="/logo-astra.png"
-            alt="Astra Agency"
-            style={{ height: 52, mixBlendMode: "multiply" }}
-          />
-        </a>
-        <a
-          href="https://calendly.com/admin-agencyastra/30-min-profit-strategy-call"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="m-nav-cta"
-          style={{
-            fontFamily: fb,
-            fontSize: "0.85rem",
-            fontWeight: 500,
-            padding: "0.65rem 1.4rem",
-            background: "var(--red)",
-            color: "var(--white)",
-            border: "none",
-            borderRadius: 5,
-            textDecoration: "none",
-            display: "inline-block",
-          }}
-        >
-          Habla con nosotros →
+      <nav className="nav">
+        <div className="nav-left">
+          <div className="nav-logo">
+            {/* Replace AA_Transparent_-_DARK_RED.png in /public when available */}
+            <img src="/logo-astra.png" alt="Astra Agency" style={{ filter: "brightness(0)" }} />
+          </div>
+        </div>
+        <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="nav-cta">
+          Get a free audit →
         </a>
       </nav>
 
-      {/* ── HERO ── */}
-      <section className="m-hero" style={{
-        padding: "4.5rem 4rem 4rem",
-        maxWidth: 960,
-        margin: "0 auto",
-        textAlign: "center",
-      }}>
-        <div style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 8,
-          fontSize: "0.72rem",
-          fontWeight: 500,
-          letterSpacing: "0.14em",
-          textTransform: "uppercase",
-          color: "var(--g600)",
-          marginBottom: "1.5rem",
-          border: "0.5px solid var(--g200)",
-          padding: "0.4rem 1.1rem",
-          borderRadius: 100,
-          background: "var(--white)",
-        }}>
-          <span style={{
-            width: 6, height: 6, borderRadius: "50%",
-            background: "var(--red)", flexShrink: 0, display: "inline-block",
-          }} />
-          Resultados de clientes activos · Sin outliers
-        </div>
+      <div className="page-layout">
+        <Sidebar />
 
-        <h1 style={{
-          fontFamily: fd,
-          fontSize: "clamp(2.5rem, 5.5vw, 4.2rem)",
-          fontWeight: 900,
-          lineHeight: 1.0,
-          letterSpacing: "-0.01em",
-          textTransform: "uppercase",
-          color: "var(--black)",
-          marginBottom: "1.25rem",
-        }}>
-          Cuentas reales.
-          <br />
-          Números reales.
-          <br />
-          <em style={{ color: "var(--red)" }}>Sin teatro.</em>
-        </h1>
+        <main className="main-content">
 
-        <p className="m-hero-sub" style={{
-          fontSize: "0.95rem",
-          fontWeight: 300,
-          lineHeight: 1.75,
-          color: "var(--g600)",
-          maxWidth: 580,
-          margin: "0 auto 2rem",
-        }}>
-          Estos son los resultados de founders que dejaron de adivinar
-          y empezaron a escalar con un sistema que ata cada peso de ads
-          a revenue real.
-        </p>
-
-        <a
-          href="https://calendly.com/admin-agencyastra/30-min-profit-strategy-call"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary m-btn-full"
-        >
-          Quiero resultados así →
-        </a>
-        <p style={{ marginTop: "0.75rem", fontSize: "0.75rem", color: "var(--g400)" }}>
-          Auditoría gratuita. Sin deck. Sin pitch.
-        </p>
-      </section>
-
-      {/* ── STATS BAR ── */}
-      <div className="m-stats" style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(4, 1fr)",
-        background: "var(--black)",
-        borderTop: "0.5px solid rgba(255,255,255,0.06)",
-        borderBottom: "0.5px solid rgba(255,255,255,0.06)",
-      }}>
-        {STATS.map((s, i, arr) => (
-          <div
-            key={i}
-            className="m-stat-item"
-            style={{
-              padding: "1.5rem 1.75rem",
-              borderRight: i < arr.length - 1
-                ? "0.5px solid rgba(255,255,255,0.06)"
-                : "none",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.3rem",
-            }}
-          >
-            <div style={{
-              fontFamily: fd,
-              fontSize: "2.2rem",
-              fontWeight: 900,
-              color: "var(--white)",
-              lineHeight: 1,
-              letterSpacing: "-0.02em",
-            }}>
-              {s.num}
-            </div>
-            <div style={{
-              fontSize: "0.68rem",
-              color: "rgba(255,255,255,0.35)",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              fontWeight: 400,
-            }}>
-              {s.lbl}
-            </div>
+          {/* ── PAGE HERO ── */}
+          <div className="page-hero">
+            <p className="page-hero-label">Case Studies</p>
+            <h1>
+              Real brands.<br />
+              <em>Real numbers.</em>
+            </h1>
+            <p className="page-hero-sub">
+              Every brand below came to us with a real problem. Here&apos;s
+              what happened when we got to work.
+            </p>
           </div>
-        ))}
-      </div>
 
-      {/* ── CASES ── */}
-      <section className="m-section" style={{
-        padding: "4rem 4rem",
-        background: "var(--off)",
-        borderBottom: "0.5px solid var(--g200)",
-      }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-          <p className="section-label">Casos de éxito</p>
-          <div style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            marginBottom: "2rem",
-            flexWrap: "wrap",
-            gap: "1rem",
-          }}>
-            <h2 style={{
-              fontFamily: fd,
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              fontWeight: 800,
-              textTransform: "uppercase",
-              color: "var(--black)",
-              lineHeight: 1.1,
-            }}>
-              Lo que pasa cuando<br />
-              <span style={{ color: "var(--red)" }}>arreglamos lo correcto.</span>
+          {/* ══════════════════════════════════════
+              CASE 1 — ONETOOL
+          ══════════════════════════════════════ */}
+          <section className="case-section" id="onetool">
+            <div className="case-eyebrow">
+              <span className="case-tag">DTC</span>
+              <span className="case-tag-divider" />
+              <span className="case-industry">Construction Supply · E-commerce</span>
+            </div>
+            <div className="case-name">OneTool</div>
+            <p className="case-intro">
+              They were doing 35 to 40 orders a day. Decent numbers — until they
+              weren&apos;t. Month after month, the same ceiling. More spend, same
+              orders. The kind of plateau that makes you wonder if you&apos;ve hit
+              the limit of what&apos;s possible for your store.
+            </p>
+            <p className="case-intro">They hadn&apos;t.</p>
+
+            <div className="case-grid">
+              {/* LEFT */}
+              <div className="story-panel">
+                <p className="panel-label">What happened</p>
+                <p className="story-text">
+                  Their campaigns were running — but nothing was actually working
+                  together. Budget was being spent, ads were live, but the orders
+                  stayed flat. No clear signal on what was driving revenue and
+                  what was just burning cash.
+                </p>
+                <div className="story-highlight">
+                  <p>
+                    75 days after Astra took over, they had a new problem: they
+                    couldn&apos;t fulfill the orders fast enough.
+                  </p>
+                </div>
+                <p className="story-text">
+                  Demand grew faster than their warehouse could handle. They had
+                  to <strong>pause their campaigns</strong> — not because they
+                  ran out of budget, but because they ran out of product.
+                </p>
+                <p className="story-text">
+                  They restocked, scaled their supply chain — and we turned the
+                  campaigns back on. Same system, more inventory,{" "}
+                  <strong>more room to grow.</strong>
+                </p>
+              </div>
+
+              {/* RIGHT */}
+              <div className="metrics-panel">
+                <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
+                  Results · 12-month period
+                </p>
+                <div className="metric-hero">
+                  <div className="metric-hero-num">8.4x</div>
+                  <div className="metric-hero-label">
+                    Return on ad spend — every dollar put in came back as $8.40 in revenue
+                  </div>
+                </div>
+                <div className="metric-row">
+                  <div>
+                    <div className="metric-item-num">$549K</div>
+                    <div className="metric-item-label">Revenue from $65K in ad spend</div>
+                  </div>
+                  <div>
+                    <div className="metric-item-num">75 days</div>
+                    <div className="metric-item-label">From plateau to full-scale demand</div>
+                  </div>
+                </div>
+                <div className="detail-list">
+                  <div className="detail-row">
+                    <span className="dk">Daily orders before</span>
+                    <span className="dv">35–40 / day</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Daily orders after</span>
+                    <span className="dv">100+ / day</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Channel</span>
+                    <span className="dv">Meta Ads</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Period</span>
+                    <span className="dv">12 months</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="case-strip">
+              <span className="strip-arrow">→</span>
+              <p className="strip-text">
+                They restocked, scaled their supply chain — and we turned the
+                campaigns back on.{" "}
+                <strong>Same system, more inventory, more room to grow.</strong>
+              </p>
+            </div>
+
+            {/* TESTIMONIAL — replace placeholder when quote is available */}
+            <div className="testimonial-placeholder">
+              <div className="testi-quote-icon">&ldquo;</div>
+              <div>
+                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
+                <p className="testi-placeholder-text">
+                  [Real client quote — ideally mentioning the problem before, the
+                  concrete result, and what it was like working with Astra.]
+                </p>
+                <div className="testi-placeholder-author">
+                  <div className="testi-avatar">photo</div>
+                  <div>
+                    <div className="testi-name-placeholder">[Client name]</div>
+                    <div className="testi-role-placeholder">[Role] · OneTool</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ══════════════════════════════════════
+              CASE 2 — COMPUMAX
+          ══════════════════════════════════════ */}
+          <section className="case-section" id="compumax" style={{ background: "var(--g100)" }}>
+            <div className="case-eyebrow">
+              <span className="case-tag">DTC</span>
+              <span className="case-tag-divider" />
+              <span className="case-industry">Laptops &amp; Tech Accessories · E-commerce</span>
+            </div>
+            <div className="case-name">Compumax</div>
+            <p className="case-intro">
+              At their peak, Compumax was doing $30K to $40K a month. Then,
+              slowly, it started slipping. Not a crash — a slow bleed. Month
+              after month, a little less. Until they hit $18K. Below break-even.
+            </p>
+
+            <div className="case-grid">
+              {/* LEFT */}
+              <div className="story-panel">
+                <p className="panel-label">What happened</p>
+                <p className="story-text">
+                  The instinct when revenue drops is to spend more on ads. They
+                  did. It didn&apos;t help — because the problem wasn&apos;t the
+                  budget. <strong>It was everything else.</strong>
+                </p>
+                <p className="story-text">
+                  Their campaigns had no structure. Their creative was running on
+                  fumes. And for every laptop they sold, they were spending 25 to
+                  30 cents of every dollar just to get that customer in the door.
+                </p>
+                <div className="story-highlight">
+                  <p>When you&apos;re already below break-even, that math doesn&apos;t work.</p>
+                </div>
+                <p className="story-text">
+                  We rebuilt everything from scratch — campaigns, creative,
+                  structure. Not one thing at a time.{" "}
+                  <strong>All of it, at once.</strong> Because everything was
+                  broken at once.
+                </p>
+                <p className="story-text">
+                  Four months later, they weren&apos;t just back. They{" "}
+                  <strong>passed their previous peak and kept going.</strong>
+                </p>
+              </div>
+
+              {/* RIGHT */}
+              <div className="metrics-panel">
+                <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
+                  Results · Jan → Apr 2026
+                </p>
+                <div className="metric-hero">
+                  <div className="metric-hero-num">$50K+</div>
+                  <div className="metric-hero-label">
+                    Monthly revenue — up from $18K at their lowest point
+                  </div>
+                </div>
+                <div className="metric-row">
+                  <div>
+                    <div className="metric-item-num green">+178%</div>
+                    <div className="metric-item-label">Revenue growth in 4 months</div>
+                  </div>
+                  <div>
+                    <div className="metric-item-num">4 mo.</div>
+                    <div className="metric-item-label">From below break-even to new peak</div>
+                  </div>
+                </div>
+                <div className="ba-block">
+                  <p className="ba-label-top">Cost to acquire a customer</p>
+                  <div className="ba-row">
+                    <span className="ba-tag">Before</span>
+                    <div className="ba-bar-wrap">
+                      <div className="ba-bar before" />
+                    </div>
+                    <span className="ba-val before">30%</span>
+                  </div>
+                  <div className="ba-row">
+                    <span className="ba-tag">After</span>
+                    <div className="ba-bar-wrap">
+                      <div className="ba-bar after" />
+                    </div>
+                    <span className="ba-val after">18%</span>
+                  </div>
+                </div>
+                <div className="detail-list">
+                  <div className="detail-row">
+                    <span className="dk">Starting point</span>
+                    <span className="dv">$18K/mo — below break-even</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Channel</span>
+                    <span className="dv">Meta Ads</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Timeline</span>
+                    <span className="dv">4 months</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="case-strip">
+              <span className="strip-arrow">→</span>
+              <p className="strip-text">
+                They passed their previous peak in month three.{" "}
+                <strong>Month four, they kept going.</strong>
+              </p>
+            </div>
+
+            <div className="testimonial-placeholder">
+              <div className="testi-quote-icon">&ldquo;</div>
+              <div>
+                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
+                <p className="testi-placeholder-text">
+                  [Real client quote — ideally mentioning the problem before, the
+                  concrete result, and what it was like working with Astra.]
+                </p>
+                <div className="testi-placeholder-author">
+                  <div className="testi-avatar">photo</div>
+                  <div>
+                    <div className="testi-name-placeholder">[Client name]</div>
+                    <div className="testi-role-placeholder">[Role] · Compumax</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ══════════════════════════════════════
+              CASE 3 — TU MUNDO SALUD
+          ══════════════════════════════════════ */}
+          <section className="case-section" id="tumundosalud">
+            <div className="case-eyebrow">
+              <span className="case-tag">DTC</span>
+              <span className="case-tag-divider" />
+              <span className="case-industry">Health Supplements · E-commerce</span>
+            </div>
+            <div className="case-name">Tu Mundo Salud</div>
+            <p className="case-intro">
+              They were already running ads. Already spending money. Already
+              getting some sales. The problem wasn&apos;t that nothing was working
+              — it was that they had no idea <em>what</em> was working or why.
+            </p>
+
+            <div className="case-grid">
+              {/* LEFT */}
+              <div className="story-panel">
+                <p className="panel-label">What happened</p>
+                <p className="story-text">
+                  Their ad account was a mess — not the visible kind, where
+                  everything&apos;s obviously broken. The quiet kind, where
+                  you&apos;re running campaigns, spending budget, and things seem
+                  to move just enough to feel like progress. But the numbers
+                  don&apos;t add up.
+                </p>
+                <p className="story-text">
+                  Events weren&apos;t tracking correctly. Products were being
+                  promoted at random with no strategy behind what to push or when.
+                  There was no structure connecting their ads to actual revenue.
+                </p>
+                <div className="story-highlight">
+                  <p>They didn&apos;t need to spend more. They needed to spend smarter.</p>
+                </div>
+                <p className="story-text">
+                  We came in, fixed the tracking, built a real campaign structure,
+                  and gave every dollar a job.{" "}
+                  <strong>The budget didn&apos;t change. The results did.</strong>
+                </p>
+              </div>
+
+              {/* RIGHT */}
+              <div className="metrics-panel">
+                <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
+                  Results · 2 months
+                </p>
+                <div className="metric-hero">
+                  <div className="metric-hero-num">2.5x</div>
+                  <div className="metric-hero-label">
+                    Revenue growth — without increasing their ad budget by a single dollar
+                  </div>
+                </div>
+                <div className="metric-row">
+                  <div>
+                    <div className="metric-item-num">$0</div>
+                    <div className="metric-item-label">Additional ad spend required</div>
+                  </div>
+                  <div>
+                    <div className="metric-item-num">2 mo.</div>
+                    <div className="metric-item-label">To see the full impact</div>
+                  </div>
+                </div>
+                <div className="detail-list">
+                  <div className="detail-row">
+                    <span className="dk">What changed</span>
+                    <span className="dv">Structure, tracking &amp; strategy</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">What didn&apos;t change</span>
+                    <span className="dv">The budget</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Channel</span>
+                    <span className="dv">Meta Ads</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="case-strip">
+              <span className="strip-arrow">→</span>
+              <p className="strip-text">
+                Same budget. Same products.{" "}
+                <strong>2.5x the revenue.</strong> The only thing that changed
+                was the system behind the ads.
+              </p>
+            </div>
+
+            <div className="testimonial-placeholder">
+              <div className="testi-quote-icon">&ldquo;</div>
+              <div>
+                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
+                <p className="testi-placeholder-text">
+                  [Real client quote — ideally mentioning the problem before, the
+                  concrete result, and what it was like working with Astra.]
+                </p>
+                <div className="testi-placeholder-author">
+                  <div className="testi-avatar">photo</div>
+                  <div>
+                    <div className="testi-name-placeholder">[Client name]</div>
+                    <div className="testi-role-placeholder">[Role] · Tu Mundo Salud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ── OTHER CASES (client component — tabs) ── */}
+          <OtherCases />
+
+          {/* ── CTA ── */}
+          <section className="cta-section">
+            <p className="cta-label">Free account audit</p>
+            <h2>
+              Your store is next.<br />
+              <em>Let&apos;s find the gap.</em>
             </h2>
-            <p style={{
-              fontSize: "0.82rem",
-              color: "var(--g600)",
-              maxWidth: 280,
-              textAlign: "right",
-              lineHeight: 1.55,
-              fontWeight: 300,
-            }}>
-              Cada caso es un sistema arreglado, no
-              un presupuesto subido.
+            <p className="cta-sub">
+              We&apos;ll look at your real account, identify exactly where the
+              leaks are, and show you what a realistic path to growth looks like.
+              No pitch, no pressure.
             </p>
-          </div>
-
-          <CasesGrid />
-        </div>
-      </section>
-
-      {/* ── METHODOLOGY NOTE ── */}
-      <section className="m-section" style={{
-        padding: "3.5rem 4rem",
-        background: "var(--white)",
-        borderBottom: "0.5px solid var(--g200)",
-      }}>
-        <div style={{
-          maxWidth: 760,
-          margin: "0 auto",
-          display: "flex",
-          gap: "2rem",
-          alignItems: "flex-start",
-        }}>
-          <div style={{
-            width: 3,
-            minHeight: 60,
-            background: "var(--red)",
-            flexShrink: 0,
-            borderRadius: 2,
-          }} />
-          <div>
-            <div style={{
-              fontFamily: fd,
-              fontSize: "1.15rem",
-              fontWeight: 800,
-              textTransform: "uppercase",
-              color: "var(--black)",
-              marginBottom: "0.6rem",
-              lineHeight: 1.25,
-            }}>
-              Metodología: ningún resultado está inflado.
-            </div>
-            <p style={{
-              fontSize: "0.88rem",
-              fontWeight: 300,
-              color: "var(--g600)",
-              lineHeight: 1.75,
-            }}>
-              Cada número viene de la cuenta de ads del cliente, de su
-              CRM o de su reporte de órdenes. No comparamos con periodos
-              de baja estacional. No usamos outliers como promedio.
-              Si no podemos atribuirlo, no lo reportamos.
+            <a
+              href={CALENDLY}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-white"
+            >
+              See exactly where your money is going →
+            </a>
+            <p className="cta-fine">
+              Takes 15 minutes. Available for brands spending $10K+/mo in ads.
             </p>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* ── CTA ── */}
-      <section className="m-cta" style={{
-        background: "var(--red)",
-        padding: "8rem 4rem",
-        textAlign: "center",
-      }}>
-        <div style={{ maxWidth: 640, margin: "0 auto" }}>
-          <p style={{
-            fontSize: "0.68rem",
-            letterSpacing: "0.16em",
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.6)",
-            marginBottom: "1.25rem",
-            fontWeight: 500,
-          }}>
-            Auditoría gratuita de cuenta
-          </p>
-          <h2 style={{
-            fontFamily: fd,
-            fontSize: "clamp(2.4rem, 5vw, 3.8rem)",
-            fontWeight: 900,
-            textTransform: "uppercase",
-            color: "var(--white)",
-            lineHeight: 1.05,
-            marginBottom: "1.25rem",
-          }}>
-            ¿Tu cuenta podría estar aquí?
-          </h2>
-          <p style={{
-            fontSize: "0.95rem",
-            fontWeight: 300,
-            color: "rgba(255,255,255,0.75)",
-            lineHeight: 1.75,
-            marginBottom: "2.5rem",
-          }}>
-            Mándanos tu cuenta. Un senior la revisa. Agendamos 20 minutos
-            y te mostramos en vivo los 3 puntos de fuga más grandes —
-            qué te está costando dinero, qué está oculto, y qué movería
-            la aguja si se arregla este mes.
-          </p>
-          <a
-            href="https://calendly.com/admin-agencyastra/30-min-profit-strategy-call"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-white m-btn-full"
-          >
-            Agenda el teardown →
-          </a>
-          <p style={{
-            marginTop: "1.25rem",
-            fontSize: "0.72rem",
-            color: "rgba(255,255,255,0.45)",
-          }}>
-            Para SaaS y DTC que gastan $10K+/mes en Meta Ads.
-          </p>
-        </div>
-      </section>
+          {/* ── FOOTER ── */}
+          <footer className="footer">
+            <img
+              src="/logo-astra.png"
+              alt="Astra Agency"
+              style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(320deg)" }}
+            />
+            <p className="footer-copy">© 2026 Astra Agency. All rights reserved.</p>
+          </footer>
 
-      {/* ── FOOTER ── */}
-      <footer className="m-footer" style={{
-        padding: "1.75rem 4rem",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        background: "var(--black)",
-        borderTop: "0.5px solid rgba(255,255,255,0.06)",
-      }}>
-        <img
-          src="/logo-astra.png"
-          alt="Astra Agency"
-          style={{ height: 90, filter: "brightness(0) invert(1)" }}
-        />
-        <p style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.3)" }}>
-          © 2026 Astra Agency. All rights reserved.
-        </p>
-      </footer>
-
-    </div>
+        </main>
+      </div>
+    </>
   );
 }

@@ -16,13 +16,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Casos de Éxito · Astra Agency",
+  title: "Case Studies · Astra Agency",
   description:
-    "Resultados reales de fundadores que dejaron de adivinar y empezaron a escalar. SaaS, DTC y Healthcare en LATAM.",
+    "Real brands. Real numbers. Every case below came to us with a real problem — here's what happened when we got to work.",
   openGraph: {
-    title: "Casos de Éxito · Astra Agency",
+    title: "Case Studies · Astra Agency",
     description:
-      "Resultados reales de fundadores que dejaron de adivinar y empezaron a escalar. SaaS, DTC y Healthcare en LATAM.",
+      "Real brands. Real numbers. Every case below came to us with a real problem — here's what happened when we got to work.",
   },
 };
 
@@ -31,9 +31,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`${barlowCondensed.variable} ${dmSans.variable}`}
-      style={{ fontFamily: "var(--font-body), sans-serif" }}
     >
       <body>{children}</body>
     </html>
