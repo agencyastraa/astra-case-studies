@@ -68,10 +68,6 @@ body {
   background: var(--white);
   text-align: center;
 }
-.page-hero-grid { display: block; }
-.page-hero-left { }
-.page-hero-stats { display: none; }
-.hero-stat { }
 .page-hero-label {
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -670,45 +666,7 @@ body {
   .page-hero h1 { font-size: 5.5rem; margin-bottom: 1rem; }
   .page-hero-sub { margin-left: 0; margin-right: 0; max-width: 480px; }
 
-  .page-hero-grid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-  }
-  .page-hero-left { flex: 1; }
-  .page-hero-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--g200);
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0;
-    width: 320px;
-  }
-  .hero-stat {
-    background: var(--white);
-    padding: 1.5rem 1.75rem;
-    border: none;
-  }
-  .hero-stat-num {
-    font-family: var(--fd);
-    font-size: 2.2rem;
-    font-weight: 900;
-    color: var(--black);
-    line-height: 1;
-    margin-bottom: 0.25rem;
-  }
-  .hero-stat-label {
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--g400);
-    font-weight: 400;
-  }
-
-  .case-section { padding: 3rem 0; }
+.case-section { padding: 3rem 0; }
   .other-cases-section { padding: 3rem 0; }
   .story-panel { padding: 2.5rem; }
   .metrics-panel { padding: 2.5rem; gap: 1.5rem; }
