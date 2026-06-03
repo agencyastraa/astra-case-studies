@@ -274,7 +274,7 @@ export default function Home() {
                 <div className="testi-author">
                   <img src="/testimonial-compumax.png" alt="CEO Compumax" className="testi-photo" width={38} height={38} />
                   <div>
-                    <div className="testi-name">[Client name]</div>
+                    <div className="testi-name">Luis Scocia</div>
                     <div className="testi-role">CEO · Compumax</div>
                   </div>
                 </div>
@@ -394,7 +394,7 @@ export default function Home() {
                 <div className="testi-author">
                   <img src="/testimonial-tumundosalud.png" alt="Owner Tu Mundo Salud" className="testi-photo" width={38} height={38} />
                   <div>
-                    <div className="testi-name">[Client name]</div>
+                    <div className="testi-name">Javier Lupi</div>
                     <div className="testi-role">Owner · Tu Mundo Salud</div>
                   </div>
                 </div>
