@@ -9,6 +9,7 @@ export default function OtherCases() {
 
   return (
     <section className="other-cases-section" id="other-cases">
+      <div className="case-inner">
       <p className="other-cases-label">More results</p>
       <h2 className="other-cases-title">Beyond e-commerce.</h2>
       <p className="other-cases-sub">
@@ -71,6 +72,7 @@ export default function OtherCases() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

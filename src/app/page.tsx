@@ -21,7 +21,7 @@ export default function Home() {
 
         {/* ── PAGE HERO ── */}
         <div className="page-hero">
-          <div className="case-inner">
+          <div className="case-inner" style={{ maxWidth: 720 }}>
             <p className="page-hero-label">Case Studies</p>
             <h1>
               Real brands.<br />
