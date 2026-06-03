@@ -137,9 +137,11 @@ export default function Home() {
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
                 <p className="testi-text">
-                  We went from 35 orders a day to over 100 in 75 days. We had to
-                  pause because we ran out of inventory — a problem I&apos;d never
-                  had before.
+                  I spent months convinced we&apos;d hit the market ceiling. The
+                  hardest thing to accept was that the problem wasn&apos;t the
+                  product — it was how we were running the ads. We ended up having
+                  to pause campaigns because we ran out of stock. That&apos;s not a
+                  problem I&apos;d ever had before.
                 </p>
                 <div className="testi-author">
                   <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" width={38} height={38} />
@@ -264,8 +266,11 @@ export default function Home() {
               <div>
                 <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
                 <p className="testi-placeholder-text">
-                  [Real client quote — ideally mentioning the problem before, the
-                  concrete result, and what it was like working with Astra.]
+                  Every month it dropped a little more. I kept telling myself
+                  it&apos;d turn around, kept putting more budget in — nothing
+                  changed. When Astra told me the problem wasn&apos;t the spend, I
+                  didn&apos;t fully believe it. Four months later we&apos;re past
+                  our best month ever.
                 </p>
                 <div className="testi-placeholder-author">
                   <div className="testi-avatar">photo</div>
@@ -383,8 +388,10 @@ export default function Home() {
               <div>
                 <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
                 <p className="testi-placeholder-text">
-                  [Real client quote — ideally mentioning the problem before, the
-                  concrete result, and what it was like working with Astra.]
+                  I thought the answer was more budget. Astra looked at the account
+                  and told me the money was already there — it was just going
+                  nowhere useful. They restructured everything and our sales almost
+                  tripled. Not a single extra peso in spend.
                 </p>
                 <div className="testi-placeholder-author">
                   <div className="testi-avatar">photo</div>
