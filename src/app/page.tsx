@@ -147,7 +147,7 @@ export default function Home() {
                   <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" width={38} height={38} />
                   <div>
                     <div className="testi-name">Oswaldo Arias</div>
-                    <div className="testi-role">CEO · OneTool · Colombia</div>
+                    <div className="testi-role">CEO · OneTool</div>
                   </div>
                 </div>
               </div>
@@ -261,22 +261,21 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="testimonial-placeholder">
+            <div className="testimonial">
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
-                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
-                <p className="testi-placeholder-text">
+                <p className="testi-text">
                   Every month it dropped a little more. I kept telling myself
                   it&apos;d turn around, kept putting more budget in — nothing
                   changed. When Astra told me the problem wasn&apos;t the spend, I
                   didn&apos;t fully believe it. Four months later we&apos;re past
                   our best month ever.
                 </p>
-                <div className="testi-placeholder-author">
-                  <div className="testi-avatar">photo</div>
+                <div className="testi-author">
+                  <img src="/testimonial-compumax.png" alt="CEO Compumax" className="testi-photo" width={38} height={38} />
                   <div>
-                    <div className="testi-name-placeholder">[Client name]</div>
-                    <div className="testi-role-placeholder">[Role] · Compumax</div>
+                    <div className="testi-name">[Client name]</div>
+                    <div className="testi-role">CEO · Compumax</div>
                   </div>
                 </div>
               </div>
@@ -383,21 +382,20 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="testimonial-placeholder">
+            <div className="testimonial">
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
-                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
-                <p className="testi-placeholder-text">
+                <p className="testi-text">
                   I thought the answer was more budget. Astra looked at the account
                   and told me the money was already there — it was just going
                   nowhere useful. They restructured everything and our sales almost
                   tripled. Not a single extra peso in spend.
                 </p>
-                <div className="testi-placeholder-author">
-                  <div className="testi-avatar">photo</div>
+                <div className="testi-author">
+                  <img src="/testimonial-tumundosalud.png" alt="Owner Tu Mundo Salud" className="testi-photo" width={38} height={38} />
                   <div>
-                    <div className="testi-name-placeholder">[Client name]</div>
-                    <div className="testi-role-placeholder">[Role] · Tu Mundo Salud</div>
+                    <div className="testi-name">[Client name]</div>
+                    <div className="testi-role">Owner · Tu Mundo Salud</div>
                   </div>
                 </div>
               </div>
