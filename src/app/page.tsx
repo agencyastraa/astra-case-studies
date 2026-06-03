@@ -263,10 +263,10 @@ export default function Home() {
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
                 <p className="testi-text">
-                  Every month a little less. I kept thinking it would turn around
-                  on its own, kept adding budget. When the team reviewed everything
-                  and said the problem wasn&apos;t the spend, I honestly didn&apos;t
-                  believe it. Four months later we&apos;re past our best month ever.
+                  The scary part wasn&apos;t one bad month. It was that every month
+                  was worse than the last and I couldn&apos;t figure out why. The
+                  team didn&apos;t just tweak things, they rebuilt everything from
+                  zero. By month three we were already past our old best.
                 </p>
                 <div className="testi-author">
                   <img src="/testimonial-compumax.png" alt="Luis Scocia" className="testi-photo" width={38} height={38} />
