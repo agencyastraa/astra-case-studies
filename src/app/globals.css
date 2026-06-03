@@ -63,9 +63,10 @@ body {
 
 /* ═══════════════════ PAGE HERO ═══════════════════ */
 .page-hero {
-  padding: 2rem 0 1.75rem;
+  padding: 1.5rem 0 1.25rem;
   border-bottom: 0.5px solid var(--g200);
   background: var(--white);
+  text-align: center;
 }
 .page-hero-label {
   font-size: 0.68rem;
@@ -73,29 +74,31 @@ body {
   text-transform: uppercase;
   color: var(--red);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .page-hero h1 {
   font-family: var(--fd);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 900;
   text-transform: uppercase;
   color: var(--black);
   line-height: 1;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 .page-hero h1 em { font-style: normal; color: var(--red); }
 .page-hero-sub {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 300;
   color: var(--g600);
   line-height: 1.7;
-  max-width: 560px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ═══════════════════ CASE SECTION ═══════════════════ */
 .case-section {
-  padding: 2.5rem 0;
+  padding: 1.75rem 0;
   border-bottom: 0.5px solid var(--g200);
   scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
@@ -104,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 .case-tag {
   font-size: 0.65rem;
@@ -134,7 +137,7 @@ body {
 }
 .case-name {
   font-family: var(--fd);
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 900;
   text-transform: uppercase;
   color: var(--black);
@@ -165,11 +168,11 @@ body {
   background: var(--g200);
   border-radius: 10px 10px 0 0;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 .story-panel {
   background: var(--white);
-  padding: 2.5rem 2.25rem;
+  padding: 1.75rem 1.75rem;
 }
 .panel-label {
   font-size: 0.62rem;
@@ -207,10 +210,10 @@ body {
 /* METRICS PANEL */
 .metrics-panel {
   background: var(--black);
-  padding: 2.5rem 2.25rem;
+  padding: 1.75rem 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.25rem;
 }
 .metric-hero { border-bottom: 0.5px solid rgba(255,255,255,0.08); padding-bottom: 1.75rem; }
 .metric-hero-num {
@@ -325,13 +328,13 @@ body {
 
 /* TESTIMONIAL PLACEHOLDER */
 .testimonial-placeholder {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   border: 1.5px dashed var(--g200);
   border-radius: 8px;
-  padding: 2rem 2.25rem;
+  padding: 1.5rem 1.75rem;
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.25rem;
   background: var(--white);
 }
 .testi-quote-icon {
@@ -386,7 +389,7 @@ body {
 
 /* ═══════════════════ OTHER CASES ═══════════════════ */
 .other-cases-section {
-  padding: 2.5rem 0;
+  padding: 1.75rem 0;
   background: var(--black);
   scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
@@ -557,7 +560,7 @@ body {
 /* ═══════════════════ CTA ═══════════════════ */
 .cta-section {
   background: var(--red);
-  padding: 4rem;
+  padding: 2.5rem 2rem;
   text-align: center;
 }
 .cta-label {
@@ -622,9 +625,9 @@ body {
 /* ═══════════════════ RESPONSIVE ═══════════════════ */
 @media (max-width: 900px) {
   .case-section,
-  .other-cases-section { padding: 2rem 0; }
-  .cta-section { padding: 2rem 1.25rem; }
-  .page-hero { padding: 1.5rem 0 1.25rem; }
+  .other-cases-section { padding: 1.25rem 0; }
+  .cta-section { padding: 1.75rem 1.25rem; }
+  .page-hero { padding: 1.25rem 0 1rem; }
   .case-inner { padding: 0 1.25rem; }
   .case-grid,
   .other-panel.active { grid-template-columns: 1fr; }
