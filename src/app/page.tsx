@@ -1,4 +1,3 @@
-import Sidebar from "./components/Sidebar";
 import OtherCases from "./components/OtherCases";
 
 const CALENDLY = "https://calendly.com/admin-agencyastra/30-min-profit-strategy-call";
@@ -10,7 +9,6 @@ export default function Home() {
       <nav className="nav">
         <div className="nav-left">
           <div className="nav-logo">
-            {/* Replace AA_Transparent_-_DARK_RED.png in /public when available */}
             <img src="/logo-astra.png" alt="Astra Agency" style={{ filter: "brightness(0)" }} />
           </div>
         </div>
@@ -19,13 +17,11 @@ export default function Home() {
         </a>
       </nav>
 
-      <div className="page-layout">
-        <Sidebar />
+      <div style={{ paddingTop: "var(--nav-h)" }}>
 
-        <main className="main-content">
-
-          {/* ── PAGE HERO ── */}
-          <div className="page-hero">
+        {/* ── PAGE HERO ── */}
+        <div className="page-hero">
+          <div className="case-inner">
             <p className="page-hero-label">Case Studies</p>
             <h1>
               Real brands.<br />
@@ -36,11 +32,13 @@ export default function Home() {
               what happened when we got to work.
             </p>
           </div>
+        </div>
 
-          {/* ══════════════════════════════════════
-              CASE 1 — ONETOOL
-          ══════════════════════════════════════ */}
-          <section className="case-section" id="onetool">
+        {/* ══════════════════════════════════════
+            CASE 1 — ONETOOL
+        ══════════════════════════════════════ */}
+        <section className="case-section" id="onetool">
+          <div className="case-inner">
             <div className="case-eyebrow">
               <span className="case-tag">DTC</span>
               <span className="case-tag-divider" />
@@ -56,7 +54,6 @@ export default function Home() {
             <p className="case-intro">They hadn&apos;t.</p>
 
             <div className="case-grid">
-              {/* LEFT */}
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
@@ -83,7 +80,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* RIGHT */}
               <div className="metrics-panel">
                 <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
                   Results · 12-month period
@@ -134,7 +130,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* TESTIMONIAL — replace placeholder when quote is available */}
             <div className="testimonial-placeholder">
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
@@ -152,12 +147,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* ══════════════════════════════════════
-              CASE 2 — COMPUMAX
-          ══════════════════════════════════════ */}
-          <section className="case-section" id="compumax" style={{ background: "var(--g100)" }}>
+        {/* ══════════════════════════════════════
+            CASE 2 — COMPUMAX
+        ══════════════════════════════════════ */}
+        <section className="case-section" id="compumax" style={{ background: "var(--g100)" }}>
+          <div className="case-inner">
             <div className="case-eyebrow">
               <span className="case-tag">DTC</span>
               <span className="case-tag-divider" />
@@ -171,7 +168,6 @@ export default function Home() {
             </p>
 
             <div className="case-grid">
-              {/* LEFT */}
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
@@ -199,7 +195,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* RIGHT */}
               <div className="metrics-panel">
                 <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
                   Results · Jan → Apr 2026
@@ -224,16 +219,12 @@ export default function Home() {
                   <p className="ba-label-top">Cost to acquire a customer</p>
                   <div className="ba-row">
                     <span className="ba-tag">Before</span>
-                    <div className="ba-bar-wrap">
-                      <div className="ba-bar before" />
-                    </div>
+                    <div className="ba-bar-wrap"><div className="ba-bar before" /></div>
                     <span className="ba-val before">30%</span>
                   </div>
                   <div className="ba-row">
                     <span className="ba-tag">After</span>
-                    <div className="ba-bar-wrap">
-                      <div className="ba-bar after" />
-                    </div>
+                    <div className="ba-bar-wrap"><div className="ba-bar after" /></div>
                     <span className="ba-val after">18%</span>
                   </div>
                 </div>
@@ -279,12 +270,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* ══════════════════════════════════════
-              CASE 3 — TU MUNDO SALUD
-          ══════════════════════════════════════ */}
-          <section className="case-section" id="tumundosalud">
+        {/* ══════════════════════════════════════
+            CASE 3 — TU MUNDO SALUD
+        ══════════════════════════════════════ */}
+        <section className="case-section" id="tumundosalud">
+          <div className="case-inner">
             <div className="case-eyebrow">
               <span className="case-tag">DTC</span>
               <span className="case-tag-divider" />
@@ -298,7 +291,6 @@ export default function Home() {
             </p>
 
             <div className="case-grid">
-              {/* LEFT */}
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
@@ -323,7 +315,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* RIGHT */}
               <div className="metrics-panel">
                 <p className="panel-label" style={{ color: "rgba(255,255,255,0.35)" }}>
                   Results · 2 months
@@ -387,47 +378,47 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* ── OTHER CASES (client component — tabs) ── */}
-          <OtherCases />
+        {/* ── OTHER CASES ── */}
+        <OtherCases />
 
-          {/* ── CTA ── */}
-          <section className="cta-section">
-            <p className="cta-label">Free account audit</p>
-            <h2>
-              Your store is next.<br />
-              <em>Let&apos;s find the gap.</em>
-            </h2>
-            <p className="cta-sub">
-              We&apos;ll look at your real account, identify exactly where the
-              leaks are, and show you what a realistic path to growth looks like.
-              No pitch, no pressure.
-            </p>
-            <a
-              href={CALENDLY}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-white"
-            >
-              See exactly where your money is going →
-            </a>
-            <p className="cta-fine">
-              Takes 15 minutes. Available for brands spending $10K+/mo in ads.
-            </p>
-          </section>
+        {/* ── CTA ── */}
+        <section className="cta-section">
+          <p className="cta-label">Free account audit</p>
+          <h2>
+            Your store is next.<br />
+            <em>Let&apos;s find the gap.</em>
+          </h2>
+          <p className="cta-sub">
+            We&apos;ll look at your real account, identify exactly where the
+            leaks are, and show you what a realistic path to growth looks like.
+            No pitch, no pressure.
+          </p>
+          <a
+            href={CALENDLY}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-white"
+          >
+            See exactly where your money is going →
+          </a>
+          <p className="cta-fine">
+            Takes 15 minutes. Available for brands spending $10K+/mo in ads.
+          </p>
+        </section>
 
-          {/* ── FOOTER ── */}
-          <footer className="footer">
-            <img
-              src="/logo-astra.png"
-              alt="Astra Agency"
-              style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(320deg)" }}
-            />
-            <p className="footer-copy">© 2026 Astra Agency. All rights reserved.</p>
-          </footer>
+        {/* ── FOOTER ── */}
+        <footer className="footer">
+          <img
+            src="/logo-astra.png"
+            alt="Astra Agency"
+            style={{ filter: "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(320deg)" }}
+          />
+          <p className="footer-copy">© 2026 Astra Agency. All rights reserved.</p>
+        </footer>
 
-        </main>
       </div>
     </>
   );
