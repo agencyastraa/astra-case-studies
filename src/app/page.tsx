@@ -142,7 +142,7 @@ export default function Home() {
                   had before.
                 </p>
                 <div className="testi-author">
-                  <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" />
+                  <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" width={38} height={38} />
                   <div>
                     <div className="testi-name">Oswaldo Arias</div>
                     <div className="testi-role">CEO · OneTool · Colombia</div>

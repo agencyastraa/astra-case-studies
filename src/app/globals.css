@@ -413,9 +413,11 @@ body {
 }
 .testi-photo {
   width: 38px; height: 38px;
+  min-width: 38px; max-width: 38px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+  display: block;
 }
 .testi-name { font-size: 0.82rem; font-weight: 600; color: var(--black); }
 .testi-role { font-size: 0.72rem; color: var(--g400); font-weight: 300; }
