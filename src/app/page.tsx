@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="metric-hero">
                   <div className="metric-hero-num">8.4x</div>
                   <div className="metric-hero-label">
-                    Return on ad spend over 12 months. Every dollar in, $8.40 back.
+                    Return on ad spend over 12 months. $65K invested, $549K in revenue.
                   </div>
                 </div>
                 <div className="metric-row">
