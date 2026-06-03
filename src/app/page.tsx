@@ -22,15 +22,37 @@ export default function Home() {
         {/* ── PAGE HERO ── */}
         <div className="page-hero">
           <div className="case-inner">
-            <p className="page-hero-label">Case Studies</p>
-            <h1>
-              Real brands.<br />
-              <em>Real numbers.</em>
-            </h1>
-            <p className="page-hero-sub">
-              Each brand here came to us with a real problem.
-              Here&apos;s what happened when we got involved.
-            </p>
+            <div className="page-hero-grid">
+              <div className="page-hero-left">
+                <p className="page-hero-label">Case Studies</p>
+                <h1>
+                  Real brands.<br />
+                  <em>Real numbers.</em>
+                </h1>
+                <p className="page-hero-sub">
+                  Each brand here came to us with a real problem.
+                  Here&apos;s what happened when we got involved.
+                </p>
+              </div>
+              <div className="page-hero-stats">
+                <div className="hero-stat">
+                  <div className="hero-stat-num">6</div>
+                  <div className="hero-stat-label">Brands</div>
+                </div>
+                <div className="hero-stat">
+                  <div className="hero-stat-num">38x</div>
+                  <div className="hero-stat-label">Peak ROAS</div>
+                </div>
+                <div className="hero-stat">
+                  <div className="hero-stat-num">$1.12M</div>
+                  <div className="hero-stat-label">Monthly peak</div>
+                </div>
+                <div className="hero-stat">
+                  <div className="hero-stat-num">12</div>
+                  <div className="hero-stat-label">Countries</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
