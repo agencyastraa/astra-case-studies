@@ -40,6 +40,7 @@ export const otherCases: OtherCase[] = [
     tabIndustry: "Gym B2B",
     clientName: "Tu Proyecto Fitness",
     clientTag: "Gym · B2B High Ticket · LATAM",
+    logo: "/logo-tuproyectofitness.png",
     problem:
       "A B2B gym consulting business with a strong high-ticket offer but no system to attract qualified leads at scale. Relying entirely on word-of-mouth and sporadic campaigns with no funnel structure. The product was strong — the entry point into the funnel was the problem.",
     heroNum: "38x",

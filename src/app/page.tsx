@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="case-name-row">
               <div className="case-name">OneTool</div>
-              <img src="/logo-onetool.png" alt="OneTool" className="case-logo" />
+              <img src="/logo-onetool.png" alt="OneTool" className="case-logo" style={{ height: 52 }} />
             </div>
             <p className="case-intro">
               They were doing 35 to 40 orders a day. Decent numbers — until they
@@ -289,8 +289,10 @@ export default function Home() {
               <span className="case-tag-divider" />
               <span className="case-industry">Health Supplements · E-commerce</span>
             </div>
-            <div className="case-name">Tu Mundo Salud</div>
-            {/* Logo pendiente — no está en el repo aún */}
+            <div className="case-name-row">
+              <div className="case-name">Tu Mundo Salud</div>
+              <img src="/logo-tumundosalud.png" alt="Tu Mundo Salud" className="case-logo" style={{ height: 32 }} />
+            </div>
             <p className="case-intro">
               They were already running ads. Already spending money. Already
               getting some sales. The problem wasn&apos;t that nothing was working
