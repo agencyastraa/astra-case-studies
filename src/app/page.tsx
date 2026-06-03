@@ -28,8 +28,8 @@ export default function Home() {
               <em>Real numbers.</em>
             </h1>
             <p className="page-hero-sub">
-              Every brand below came to us with a real problem. Here&apos;s
-              what happened when we got to work.
+              Each brand here came to us with a real problem.
+              Here&apos;s what happened when we got involved.
             </p>
           </div>
         </div>
@@ -49,37 +49,36 @@ export default function Home() {
               <img src="/logo-onetool.png" alt="OneTool" className="case-logo" style={{ height: 52 }} />
             </div>
             <p className="case-intro">
-              They were doing 35 to 40 orders a day. Decent numbers — until they
-              weren&apos;t. Month after month, the same ceiling. More spend, same
-              orders. The kind of plateau that makes you wonder if you&apos;ve hit
-              the limit of what&apos;s possible for your store.
+              OneTool was already doing 35 to 40 orders a day. Solid numbers,
+              but completely stuck. For months, every time they pushed harder on
+              spend, orders stayed flat. The ceiling felt real.
             </p>
-            <p className="case-intro">They hadn&apos;t.</p>
+            <p className="case-intro">It wasn&apos;t.</p>
 
             <div className="case-grid">
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
-                  Their campaigns were running — but nothing was actually working
-                  together. Budget was being spent, ads were live, but the orders
-                  stayed flat. No clear signal on what was driving revenue and
-                  what was just burning cash.
+                  The problem wasn&apos;t budget. The campaigns were live, money
+                  was going out, but everything was running in isolation. There
+                  was no structure connecting what they spent to what they
+                  actually sold. Scaling the budget just meant scaling the waste.
                 </p>
                 <div className="story-highlight">
                   <p>
-                    75 days after Astra took over, they had a new problem: they
-                    couldn&apos;t fulfill the orders fast enough.
+                    75 days after we started working together, they had a new
+                    problem: they couldn&apos;t fulfill orders fast enough.
                   </p>
                 </div>
                 <p className="story-text">
                   Demand grew faster than their warehouse could handle. They had
-                  to <strong>pause their campaigns</strong> — not because they
-                  ran out of budget, but because they ran out of product.
+                  to <strong>pause their campaigns</strong> not because they ran
+                  out of budget, but because they ran out of product.
                 </p>
                 <p className="story-text">
-                  They restocked, scaled their supply chain — and we turned the
-                  campaigns back on. Same system, more inventory,{" "}
-                  <strong>more room to grow.</strong>
+                  They restocked, built out the supply chain, and we started
+                  everything back up.{" "}
+                  <strong>Same system, more room to grow.</strong>
                 </p>
               </div>
 
@@ -90,17 +89,17 @@ export default function Home() {
                 <div className="metric-hero">
                   <div className="metric-hero-num">8.4x</div>
                   <div className="metric-hero-label">
-                    Return on ad spend — every dollar put in came back as $8.40 in revenue
+                    Return on ad spend over 12 months. Every dollar in, $8.40 back.
                   </div>
                 </div>
                 <div className="metric-row">
                   <div>
                     <div className="metric-item-num">$549K</div>
-                    <div className="metric-item-label">Revenue from $65K in ad spend</div>
+                    <div className="metric-item-label">Revenue generated from $65K in ad spend over 12 months</div>
                   </div>
                   <div>
                     <div className="metric-item-num">75 days</div>
-                    <div className="metric-item-label">From plateau to full-scale demand</div>
+                    <div className="metric-item-label">To go from plateau to 100+ orders a day</div>
                   </div>
                 </div>
                 <div className="detail-list">
@@ -127,8 +126,8 @@ export default function Home() {
             <div className="case-strip">
               <span className="strip-arrow">→</span>
               <p className="strip-text">
-                They restocked, scaled their supply chain — and we turned the
-                campaigns back on.{" "}
+                They restocked, built out their supply chain, and we turned
+                everything back on.{" "}
                 <strong>Same system, more inventory, more room to grow.</strong>
               </p>
             </div>
@@ -137,11 +136,10 @@ export default function Home() {
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
                 <p className="testi-text">
-                  I spent months convinced we&apos;d hit the market ceiling. The
-                  hardest thing to accept was that the problem wasn&apos;t the
-                  product — it was how we were running the ads. We ended up having
-                  to pause campaigns because we ran out of stock. That&apos;s not a
-                  problem I&apos;d ever had before.
+                  I spent months thinking we&apos;d hit the ceiling for our market.
+                  Turns out the ceiling was in the campaigns, not the product. We
+                  actually had to pause ads because we ran out of stock. Never
+                  had that problem before.
                 </p>
                 <div className="testi-author">
                   <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" width={38} height={38} />
@@ -170,29 +168,29 @@ export default function Home() {
               <img src="/logo-compumax.png" alt="Compumax" className="case-logo" />
             </div>
             <p className="case-intro">
-              At their peak, Compumax was doing $30K to $40K a month. Then,
-              slowly, it started slipping. Not a crash — a slow bleed. Month
-              after month, a little less. Until they hit $18K. Below break-even.
+              At their peak, Compumax was hitting $30K to $40K a month. Then it
+              started slipping. Not a crash, just a slow, quiet drop. Month after
+              month a little less, until they landed at $18K. Below break-even.
             </p>
 
             <div className="case-grid">
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
-                  The instinct when revenue drops is to spend more on ads. They
-                  did. It didn&apos;t help — because the problem wasn&apos;t the
-                  budget. <strong>It was everything else.</strong>
+                  When revenue drops, the first instinct is to spend more on ads.
+                  They tried that. It didn&apos;t move the needle, because the
+                  problem had nothing to do with budget.
                 </p>
                 <p className="story-text">
-                  Their campaigns had no structure. Their creative was running on
-                  fumes. And for every laptop they sold, they were spending 25 to
-                  30 cents of every dollar just to get that customer in the door.
+                  Their campaigns had no structure. Creative was running on fumes.
+                  For every laptop they sold, they were spending 25 to 30 cents of
+                  every dollar just to get that customer in the door.
                 </p>
                 <div className="story-highlight">
                   <p>When you&apos;re already below break-even, that math doesn&apos;t work.</p>
                 </div>
                 <p className="story-text">
-                  We rebuilt everything from scratch — campaigns, creative,
+                  We rebuilt everything from scratch. Campaigns, creative,
                   structure. Not one thing at a time.{" "}
                   <strong>All of it, at once.</strong> Because everything was
                   broken at once.
@@ -210,7 +208,7 @@ export default function Home() {
                 <div className="metric-hero">
                   <div className="metric-hero-num">$50K+</div>
                   <div className="metric-hero-label">
-                    Monthly revenue — up from $18K at their lowest point
+                    Monthly revenue, up from $18K at their lowest point
                   </div>
                 </div>
                 <div className="metric-row">
@@ -239,7 +237,7 @@ export default function Home() {
                 <div className="detail-list">
                   <div className="detail-row">
                     <span className="dk">Starting point</span>
-                    <span className="dv">$18K/mo — below break-even</span>
+                    <span className="dv">$18K/mo, below break-even</span>
                   </div>
                   <div className="detail-row">
                     <span className="dk">Channel</span>
@@ -265,14 +263,13 @@ export default function Home() {
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
                 <p className="testi-text">
-                  Every month it dropped a little more. I kept telling myself
-                  it&apos;d turn around, kept putting more budget in — nothing
-                  changed. When Astra told me the problem wasn&apos;t the spend, I
-                  didn&apos;t fully believe it. Four months later we&apos;re past
-                  our best month ever.
+                  Every month a little less. I kept thinking it would turn around
+                  on its own, kept adding budget. When the team reviewed everything
+                  and said the problem wasn&apos;t the spend, I honestly didn&apos;t
+                  believe it. Four months later we&apos;re past our best month ever.
                 </p>
                 <div className="testi-author">
-                  <img src="/testimonial-compumax.png" alt="CEO Compumax" className="testi-photo" width={38} height={38} />
+                  <img src="/testimonial-compumax.png" alt="Luis Scocia" className="testi-photo" width={38} height={38} />
                   <div>
                     <div className="testi-name">Luis Scocia</div>
                     <div className="testi-role">CEO · Compumax</div>
@@ -298,32 +295,31 @@ export default function Home() {
               <img src="/logo-tumundosalud.png" alt="Tu Mundo Salud" className="case-logo" style={{ height: 48, mixBlendMode: "multiply" }} />
             </div>
             <p className="case-intro">
-              They were already running ads. Already spending money. Already
-              getting some sales. The problem wasn&apos;t that nothing was working
-              — it was that they had no idea <em>what</em> was working or why.
+              Tu Mundo Salud was already running ads and getting sales. The
+              budget wasn&apos;t the issue. The issue was that nobody on the team
+              could explain where those sales were actually coming from.
             </p>
 
             <div className="case-grid">
               <div className="story-panel">
                 <p className="panel-label">What happened</p>
                 <p className="story-text">
-                  Their ad account was a mess — not the visible kind, where
-                  everything&apos;s obviously broken. The quiet kind, where
-                  you&apos;re running campaigns, spending budget, and things seem
-                  to move just enough to feel like progress. But the numbers
-                  don&apos;t add up.
+                  The account wasn&apos;t obviously broken. Campaigns were
+                  running, some sales were coming in. But the tracking was off,
+                  products were being promoted without any real logic, and there
+                  was nothing connecting ad spend to actual revenue.
                 </p>
                 <p className="story-text">
-                  Events weren&apos;t tracking correctly. Products were being
-                  promoted at random with no strategy behind what to push or when.
-                  There was no structure connecting their ads to actual revenue.
+                  When you can&apos;t see what&apos;s working, you can&apos;t
+                  lean into it. You just spread budget around and hope something
+                  sticks.
                 </p>
                 <div className="story-highlight">
                   <p>They didn&apos;t need to spend more. They needed to spend smarter.</p>
                 </div>
                 <p className="story-text">
-                  We came in, fixed the tracking, built a real campaign structure,
-                  and gave every dollar a job.{" "}
+                  We fixed the tracking, built a real campaign structure, and gave
+                  every dollar a clear purpose.{" "}
                   <strong>The budget didn&apos;t change. The results did.</strong>
                 </p>
               </div>
@@ -335,13 +331,13 @@ export default function Home() {
                 <div className="metric-hero">
                   <div className="metric-hero-num">2.5x</div>
                   <div className="metric-hero-label">
-                    Revenue growth — without increasing their ad budget by a single dollar
+                    Revenue growth, without touching the ad budget
                   </div>
                 </div>
                 <div className="metric-row">
                   <div>
                     <div className="metric-item-num">675</div>
-                    <div className="metric-item-label">Sales per month — up from 270</div>
+                    <div className="metric-item-label">Monthly sales, up from 270</div>
                   </div>
                   <div>
                     <div className="metric-item-num">2 mo.</div>
@@ -359,7 +355,7 @@ export default function Home() {
                   </div>
                   <div className="detail-row">
                     <span className="dk">Budget change</span>
-                    <span className="dv">$0 — same spend</span>
+                    <span className="dv">$0 extra spend</span>
                   </div>
                   <div className="detail-row">
                     <span className="dk">What changed</span>
@@ -386,13 +382,13 @@ export default function Home() {
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
                 <p className="testi-text">
-                  I thought the answer was more budget. Astra looked at the account
-                  and told me the money was already there — it was just going
-                  nowhere useful. They restructured everything and our sales almost
-                  tripled. Not a single extra peso in spend.
+                  I thought we just needed to spend more. The team reviewed
+                  everything and showed me the budget was already there, it was
+                  just going nowhere useful. They rebuilt the whole structure and
+                  our sales almost tripled. Same spend, completely different result.
                 </p>
                 <div className="testi-author">
-                  <img src="/testimonial-tumundosalud.png" alt="Owner Tu Mundo Salud" className="testi-photo" width={38} height={38} />
+                  <img src="/testimonial-tumundosalud.png" alt="Javier Lupi" className="testi-photo" width={38} height={38} />
                   <div>
                     <div className="testi-name">Javier Lupi</div>
                     <div className="testi-role">Owner · Tu Mundo Salud</div>
@@ -414,7 +410,7 @@ export default function Home() {
             <em>Let&apos;s find the gap.</em>
           </h2>
           <p className="cta-sub">
-            We&apos;ll look at your real account, identify exactly where the
+            We&apos;ll look at your real account, find exactly where the
             leaks are, and show you what a realistic path to growth looks like.
             No pitch, no pressure.
           </p>

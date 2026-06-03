@@ -18,12 +18,12 @@ export const otherCases: OtherCase[] = [
     tab: "IDACA",
     tabIndustry: "Medical Imaging",
     clientName: "IDACA",
-    clientTag: "Medical Imaging · 9 Locations · USA",
+    clientTag: "Medical Imaging · 9 Locations",
     logo: "/logo-idaca.png",
     problem:
-      "A 9-location medical imaging network generating $809K/month but stuck — unable to identify which locations, services, or campaigns were actually driving revenue. Budget spread evenly with no data to justify reallocation. Growth flatlined for 6+ months.",
+      "A 9-location medical imaging network generating $809K/month but completely stuck. They had no visibility into which locations, services, or campaigns were actually driving revenue. Budget was spread evenly across everything with no data to justify moving it. Growth had flatlined for 6 months.",
     heroNum: "$1.12M",
-    heroLabel: "Monthly revenue in 90 days — up from $809K",
+    heroLabel: "Monthly revenue in 90 days, up from $809K",
     metrics: [
       { val: "+38%", key: "Revenue growth" },
       { val: "Day 60", key: "$1M/month milestone" },
@@ -39,12 +39,12 @@ export const otherCases: OtherCase[] = [
     tab: "Tu Proyecto Fitness",
     tabIndustry: "Gym B2B",
     clientName: "Tu Proyecto Fitness",
-    clientTag: "Gym · B2B High Ticket · LATAM",
+    clientTag: "Gym · B2B High Ticket",
     logo: "/logo-tuproyectofitness.png",
     problem:
-      "A B2B gym consulting business with a strong high-ticket offer but no system to attract qualified leads at scale. Relying entirely on word-of-mouth and sporadic campaigns with no funnel structure. The product was strong — the entry point into the funnel was the problem.",
+      "A B2B gym consulting business with a strong high-ticket offer and no system to bring in qualified leads at scale. Everything came through word-of-mouth and occasional campaigns with no real funnel behind them. The offer wasn't the problem. Getting the right people to see it was.",
     heroNum: "38x",
-    heroLabel: "ROAS — $6K spend → $230K revenue",
+    heroLabel: "ROAS — $6K in spend, $230K in revenue",
     metrics: [
       { val: "$200K+", key: "Single client value" },
       { val: "2 months", key: "Timeline" },
@@ -63,9 +63,9 @@ export const otherCases: OtherCase[] = [
     clientTag: "Gym SaaS · 12 Countries",
     logo: "/logo-xcore.png",
     problem:
-      "A gym management SaaS in 12 countries with no scalable acquisition system. New clients came entirely from referrals and in-person travel by the sales team. Growth was capped by human capacity — no way to reach new markets without getting on a plane.",
+      "A gym management SaaS operating in 12 countries with no scalable way to bring in new clients. Every new customer came through referrals or the sales team traveling in person. Growth was limited to whatever the team could physically reach.",
     heroNum: "8–12",
-    heroLabel: "New gyms/month across multiple countries simultaneously",
+    heroLabel: "New gyms per month across multiple countries simultaneously",
     metrics: [
       { val: "$5K", key: "Monthly ad spend" },
       { val: "12", key: "Countries active" },
@@ -73,7 +73,7 @@ export const otherCases: OtherCase[] = [
     details: [
       { key: "Previous model", val: "Referrals + travel" },
       { key: "Now", val: "Automated + chatbot qualified" },
-      { key: "Revenue model", val: "Monthly subscription — compounding MRR" },
+      { key: "Revenue model", val: "Monthly subscription, compounding MRR" },
     ],
   },
 ];
