@@ -133,19 +133,19 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="testimonial-placeholder">
+            <div className="testimonial">
               <div className="testi-quote-icon">&ldquo;</div>
               <div>
-                <div className="testi-placeholder-badge">⚠ Add real testimonial</div>
-                <p className="testi-placeholder-text">
-                  [Real client quote — ideally mentioning the problem before, the
-                  concrete result, and what it was like working with Astra.]
+                <p className="testi-text">
+                  We went from 35 orders a day to over 100 in 75 days. We had to
+                  pause because we ran out of inventory — a problem I&apos;d never
+                  had before.
                 </p>
-                <div className="testi-placeholder-author">
-                  <div className="testi-avatar">photo</div>
+                <div className="testi-author">
+                  <img src="/testimonial-onetool.png" alt="Oswaldo Arias" className="testi-photo" />
                   <div>
-                    <div className="testi-name-placeholder">[Client name]</div>
-                    <div className="testi-role-placeholder">[Role] · OneTool</div>
+                    <div className="testi-name">Oswaldo Arias</div>
+                    <div className="testi-role">CEO · OneTool · Colombia</div>
                   </div>
                 </div>
               </div>
@@ -336,8 +336,8 @@ export default function Home() {
                 </div>
                 <div className="metric-row">
                   <div>
-                    <div className="metric-item-num">$0</div>
-                    <div className="metric-item-label">Additional ad spend required</div>
+                    <div className="metric-item-num">675</div>
+                    <div className="metric-item-label">Sales per month — up from 270</div>
                   </div>
                   <div>
                     <div className="metric-item-num">2 mo.</div>
@@ -346,12 +346,20 @@ export default function Home() {
                 </div>
                 <div className="detail-list">
                   <div className="detail-row">
-                    <span className="dk">What changed</span>
-                    <span className="dv">Structure, tracking &amp; strategy</span>
+                    <span className="dk">Sales before</span>
+                    <span className="dv">270 / month</span>
                   </div>
                   <div className="detail-row">
-                    <span className="dk">What didn&apos;t change</span>
-                    <span className="dv">The budget</span>
+                    <span className="dk">Sales after</span>
+                    <span className="dv">675 / month</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">Budget change</span>
+                    <span className="dv">$0 — same spend</span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="dk">What changed</span>
+                    <span className="dv">Structure, tracking &amp; strategy</span>
                   </div>
                   <div className="detail-row">
                     <span className="dk">Channel</span>
@@ -364,7 +372,7 @@ export default function Home() {
             <div className="case-strip">
               <span className="strip-arrow">→</span>
               <p className="strip-text">
-                Same budget. Same products.{" "}
+                Same budget. Same products. From 270 to 675 sales a month.{" "}
                 <strong>2.5x the revenue.</strong> The only thing that changed
                 was the system behind the ads.
               </p>
