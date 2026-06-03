@@ -291,7 +291,7 @@ export default function Home() {
             </div>
             <div className="case-name-row">
               <div className="case-name">Tu Mundo Salud</div>
-              <img src="/logo-tumundosalud.png" alt="Tu Mundo Salud" className="case-logo" style={{ height: 32 }} />
+              <img src="/logo-tumundosalud.png" alt="Tu Mundo Salud" className="case-logo" style={{ height: 48, mixBlendMode: "multiply" }} />
             </div>
             <p className="case-intro">
               They were already running ads. Already spending money. Already
