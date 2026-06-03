@@ -33,7 +33,16 @@ export default function OtherCases() {
       <div className="other-panel active">
         <div className="other-panel-left">
           <p className="other-panel-label">The situation</p>
-          <div className="other-client-name">{c.clientName}</div>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.25rem" }}>
+            <div className="other-client-name">{c.clientName}</div>
+            {c.logo && (
+              <img
+                src={c.logo}
+                alt={c.clientName}
+                style={{ height: 28, width: "auto", objectFit: "contain", opacity: 0.7, flexShrink: 0 }}
+              />
+            )}
+          </div>
           <div className="other-client-tag">{c.clientTag}</div>
           <div className="other-problem-block">
             <div className="other-problem-title">Before Astra</div>

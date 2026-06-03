@@ -4,6 +4,7 @@ export interface OtherCase {
   tabIndustry: string;
   clientName: string;
   clientTag: string;
+  logo?: string;
   problem: string;
   heroNum: string;
   heroLabel: string;
@@ -18,6 +19,7 @@ export const otherCases: OtherCase[] = [
     tabIndustry: "Medical Imaging",
     clientName: "IDACA",
     clientTag: "Medical Imaging · 9 Locations · USA",
+    logo: "/logo-idaca.png",
     problem:
       "A 9-location medical imaging network generating $809K/month but stuck — unable to identify which locations, services, or campaigns were actually driving revenue. Budget spread evenly with no data to justify reallocation. Growth flatlined for 6+ months.",
     heroNum: "$1.12M",
@@ -58,6 +60,7 @@ export const otherCases: OtherCase[] = [
     tabIndustry: "Gym SaaS",
     clientName: "Xcore.fit",
     clientTag: "Gym SaaS · 12 Countries",
+    logo: "/logo-xcore.png",
     problem:
       "A gym management SaaS in 12 countries with no scalable acquisition system. New clients came entirely from referrals and in-person travel by the sales team. Growth was capped by human capacity — no way to reach new markets without getting on a plane.",
     heroNum: "8–12",

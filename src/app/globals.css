@@ -62,7 +62,7 @@ body {
 
 /* ═══════════════════ PAGE HERO ═══════════════════ */
 .page-hero {
-  padding: 3.5rem 4rem 3rem;
+  padding: 2rem 4rem 1.75rem;
   border-bottom: 0.5px solid var(--g200);
   background: var(--white);
 }
@@ -94,7 +94,7 @@ body {
 
 /* ═══════════════════ CASE SECTION ═══════════════════ */
 .case-section {
-  padding: 4rem;
+  padding: 2.5rem 4rem;
   border-bottom: 0.5px solid var(--g200);
   scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
@@ -385,7 +385,7 @@ body {
 
 /* ═══════════════════ OTHER CASES ═══════════════════ */
 .other-cases-section {
-  padding: 4rem;
+  padding: 2.5rem 4rem;
   background: var(--black);
   scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
@@ -556,7 +556,7 @@ body {
 /* ═══════════════════ CTA ═══════════════════ */
 .cta-section {
   background: var(--red);
-  padding: 5rem 4rem;
+  padding: 4rem;
   text-align: center;
 }
 .cta-label {
@@ -622,8 +622,8 @@ body {
 @media (max-width: 900px) {
   .case-section,
   .other-cases-section,
-  .cta-section { padding: 3rem 1.5rem; }
-  .page-hero { padding: 2.5rem 1.5rem 2rem; }
+  .cta-section { padding: 2rem 1.25rem; }
+  .page-hero { padding: 1.5rem 1.25rem 1.25rem; }
   .case-grid,
   .other-panel.active { grid-template-columns: 1fr; }
   .nav { padding: 0 1.25rem; }

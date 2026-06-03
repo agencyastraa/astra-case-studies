@@ -44,7 +44,10 @@ export default function Home() {
               <span className="case-tag-divider" />
               <span className="case-industry">Construction Supply · E-commerce</span>
             </div>
-            <div className="case-name">OneTool</div>
+            <div className="case-name-row">
+              <div className="case-name">OneTool</div>
+              <img src="/logo-onetool.png" alt="OneTool" className="case-logo" />
+            </div>
             <p className="case-intro">
               They were doing 35 to 40 orders a day. Decent numbers — until they
               weren&apos;t. Month after month, the same ceiling. More spend, same
@@ -160,7 +163,10 @@ export default function Home() {
               <span className="case-tag-divider" />
               <span className="case-industry">Laptops &amp; Tech Accessories · E-commerce</span>
             </div>
-            <div className="case-name">Compumax</div>
+            <div className="case-name-row">
+              <div className="case-name">Compumax</div>
+              <img src="/logo-compumax.png" alt="Compumax" className="case-logo" />
+            </div>
             <p className="case-intro">
               At their peak, Compumax was doing $30K to $40K a month. Then,
               slowly, it started slipping. Not a crash — a slow bleed. Month
@@ -284,6 +290,7 @@ export default function Home() {
               <span className="case-industry">Health Supplements · E-commerce</span>
             </div>
             <div className="case-name">Tu Mundo Salud</div>
+            {/* Logo pendiente — no está en el repo aún */}
             <p className="case-intro">
               They were already running ads. Already spending money. Already
               getting some sales. The problem wasn&apos;t that nothing was working
